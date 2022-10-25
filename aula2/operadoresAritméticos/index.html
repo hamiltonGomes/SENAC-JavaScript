@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #fdfd96;
+            line-height: 1.5;
+
+        }
+
+        b {
+            color: red;
+        }
+    </style>
+
+    <title>Aula 2 - Operadores</title>
+</head>
+
+<body id="darkAll">
+
+    <h1>Operadores aritméticos</h1>
+
+    <p>Adição +</p>
+    <p>Subtração -</p>
+    <p>Multiplicação *</p>
+    <p>Divisão /</p>
+    <p>Potência **</p>
+    <p>Resto %</p>
+
+    <h2>Ordem de execução:</h2>
+    <ol>
+        <li>()</li>
+        <li>**</li>
+        <li>* / %</li>
+        <li>+ -</li>
+    </ol>
+    <p> <b>De cima para baixo, da esquerda para direita.</b></p>
+    <hr>
+
+    <h2>Sintaxe simplificada:</h2>
+    <ul>
+        <p>A simplificação irá ocorrer quando a variável</p>
+        <li>n=n+5 pode ser escrito também como: <b>n+=5</b></li>
+        <li>n=n-7 pode ser escrito também como: <b>n-=7</b></li>
+        <li>n=n*4 pode ser escrito também como: <b>n*=4</b></li>
+        <li>n=n/2 pode ser escrito também como: <b>n/=2</b></li>
+    </ul>
+
+    <h2>Incremento:</h2>
+    <ul>
+        <li>x=x+1 pode ser escrito também como: <b>x+=1</b> ou <b>x++</b></li>
+        <li>x=x-1 pode ser escrito também como: <b>x-=1</b> ou <b>x--</b></li>
+    </ul>
+    <hr>
+
+    <h2>Operadores relacionais</h2>
+    <ul>
+        <li>></li>
+        <li>
+            << /li>
+        <li>>=</li>
+        <li>
+            <=< /li>
+        <li>=</li>
+        <li>==</li>
+        <dd>Verifica apenas o valor do elemento, desconsidera o tipo.</dd>
+        <li>===</li>
+        <dd>Operador de identidade ou Operador de igualdade restrita. Verifica o valor e o tipo do elemento.</dd>
+    </ul>
+    <hr>
+
+    <h2>Operadores lógicos</h2>
+    <ul>
+        <li>!</li>
+        <dd>Negação</dd>
+        <li>&&</li>
+        <dd>and</dd>
+        <li>||</li>
+        <dd>or</dd>
+    </ul>
+    <hr>
+
+    <h2>Ordem de precedência de operações</h2>
+    <ol>
+        <li>Operadores aritméticos</li>
+        <li>Operadores relacionais</li>
+        <li>Operadores lógicos</li>
+        <li>!</li>
+        <li>&&</li>
+        <li>||</li>
+    </ol>
+    <p> <b>De cima para baixo, da esquerda para direita.</b></p>
+    <hr>
+
+    <h2>Operadores ternários</h2>
+    <p>var media = 8</p>
+    <p> var n1 = media % 2 == 0 <b>?</b> "true" <b>:</b> "false"</p>
+    <p> A resposta que será informada é "true"</p>
+    <hr>
+
+    <h2>DOM</h2>
+    <p>A contagem no JavaScript inicia-se no 0.</p>
+    <p>getElementsByTagName('x')[]</p>
+    <p>getElementByTagName('')</p>
+    <p>getElementsByClassName('')[]</p>
+    <p>getElementById</p>
+    <p>querySelector('')</p>
+    <p>Sempre que houver "Elements", deverá ter <b>[]</b>.</p>
+    <p>Há uma infinidade de <b>eventos</b> que podem ser realizados com os elementos DOM.</p>
+    <p>Exemplo:</p>
+
+    <button id="dark" onclick="darkMode()">Não clique aqui!</button>
+    <script>
+        function darkMode() {
+            var dark = window.document.getElementById('dark')
+            dark.style.background = 'black'
+            dark.style.color = 'white'
+            dark.innerText = 'Você clicou.'
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
