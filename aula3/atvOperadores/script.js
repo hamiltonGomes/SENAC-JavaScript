@@ -6,7 +6,15 @@ function somar() {
     valor1Convertido = Number(valor1.value)
     valor2Convertido = Number(valor2.value)
     soma = valor1Convertido + valor2Convertido
+    
     resultado.innerHTML = `Resultado: a soma dos valores é igual a <strong>${soma}</strong>.`
+
+    backBody = document.getElementsByTagName('body')[0]
+    if (soma > 0) {
+        backBody.style.backgroundColor = '#00FFFF'
+    } else {
+        backBody.style.backgroundColor = '#FA8072'
+    }
 }
 
 function subtrair() {
@@ -16,7 +24,15 @@ function subtrair() {
     valor3Convertido = Number(valor3.value)
     valor4Convertido = Number(valor4.value)
     subt = valor3Convertido - valor4Convertido
+
     resultado.innerHTML = `Resultado: a subtração dos valores é igual a <strong>${subt}</strong>.`
+
+    backBody = document.getElementsByTagName('body')[0]
+    if (subt > 0) {
+        backBody.style.backgroundColor = '#00FFFF'
+    } else {
+        backBody.style.backgroundColor = '#FA8072'
+    }
 }
 
 function multiplicacao() {
@@ -26,7 +42,15 @@ function multiplicacao() {
     valor5Convertido = Number(valor5.value)
     valor6Convertido = Number(valor6.value)
     multi = valor5Convertido * valor6Convertido
+
     resultado.innerHTML = `Resultado: a multiplicação dos valores é igual a <strong>${multi}</strong>.`
+
+    backBody = document.getElementsByTagName('body')[0]
+    if (multi > 0) {
+        backBody.style.backgroundColor = '#00FFFF'
+    } else {
+        backBody.style.backgroundColor = '#FA8072'
+    }
 }
 
 function divisao() {
@@ -36,5 +60,13 @@ function divisao() {
     valor7Convertido = Number(valor7.value)
     valor8Convertido = Number(valor8.value)
     divi = valor7Convertido / valor8Convertido
+
     resultado.innerHTML = `Resultado: a divisão dos valores é igual a <strong>${divi}</strong>.`
+
+    backBody = document.getElementsByTagName('body')[0]
+    if (divi > 0) {
+        backBody.style.backgroundColor = '#00FFFF'
+    } else {
+        backBody.style.backgroundColor = '#FA8072'
+    }
 }
