@@ -1,5 +1,5 @@
 body {
-    margin: 20px;
+    margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     background-color: #FFDAB9;
@@ -49,6 +49,7 @@ input {
 }
 
 .container {
+    margin: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
