@@ -1,6 +1,3 @@
-
-
-
 var a = window.document.getElementById('area')
 a.addEventListener("click", clicar)
 a.addEventListener("mouseenter", entrar)
