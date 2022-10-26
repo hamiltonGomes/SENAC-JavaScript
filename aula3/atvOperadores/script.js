@@ -1,5 +1,5 @@
 
-function somar(){
+function somar() {
     valor1 = document.getElementById('valor1')
     valor2 = document.getElementById('valor2')
     resultado = document.getElementsByTagName('p')[0]
@@ -9,7 +9,7 @@ function somar(){
     resultado.innerHTML = `Resultado: a soma dos valores é igual a <strong>${soma}</strong>.`
 }
 
-function subtrair(){
+function subtrair() {
     valor3 = document.getElementById('valor3')
     valor4 = document.getElementById('valor4')
     resultado = document.getElementsByTagName('p')[1]
@@ -19,7 +19,7 @@ function subtrair(){
     resultado.innerHTML = `Resultado: a subtração dos valores é igual a <strong>${subt}</strong>.`
 }
 
-function multiplicacao(){
+function multiplicacao() {
     valor5 = document.getElementById('valor5')
     valor6 = document.getElementById('valor6')
     resultado = document.getElementsByTagName('p')[2]
@@ -29,7 +29,7 @@ function multiplicacao(){
     resultado.innerHTML = `Resultado: a multiplicação dos valores é igual a <strong>${multi}</strong>.`
 }
 
-function divisao(){
+function divisao() {
     valor7 = document.getElementById('valor7')
     valor8 = document.getElementById('valor8')
     resultado = document.getElementsByTagName('p')[3]
