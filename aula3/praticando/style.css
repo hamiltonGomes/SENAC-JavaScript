@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    width: 100%;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    color: white;
+}
