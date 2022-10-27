@@ -3,8 +3,8 @@ lampada.addEventListener("mouseenter", ligar)
 lampada.addEventListener("mouseleave", desligar)
 
 lampada2 = document.getElementById("lampada2")
-lampada2.addEventListener("mouseleave", desligar1)
-lampada2.addEventListener("mouseenter", ligar1)
+lampada2.addEventListener("mouseenter", desligar1)
+lampada2.addEventListener("mouseleave", ligar1)
 
 function ligar() {
     lampada.setAttribute("src", "imagens/acesa.png")

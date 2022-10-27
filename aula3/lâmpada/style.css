@@ -1,16 +1,22 @@
 img {
-    width: 400px;
-    height: 400px;
-}
-
-#lampada {
-    margin-right: 250px;
+    width: 40%;
 }
 
 .container {
     display: flex;
-    margin: 10%;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
+    align-items: center;
+    margin: 5%;
+    gap: 20%;
+}
+
+@media screen and (min-width: 250px) and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        margin: 4%;
+        width: 80%;
+    }
 }
