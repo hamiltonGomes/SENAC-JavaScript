@@ -1,17 +1,3 @@
-
-:root{
-    --cor-primaria: #fff
-    --cor-primaria-dark:#000
-}
-
-.light{
-    background-color: var(--cor-primaria);
-}
-
-.dark{
-    background-color: var(--cor-primaria-dark);
-}
-
 img {
     width: 400px;
     height: 400px;
