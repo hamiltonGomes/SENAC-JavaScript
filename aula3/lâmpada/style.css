@@ -1,4 +1,30 @@
+
+:root{
+    --cor-primaria: #fff
+    --cor-primaria-dark:#000
+}
+
+.light{
+    background-color: var(--cor-primaria);
+}
+
+.dark{
+    background-color: var(--cor-primaria-dark);
+}
+
 img {
-    width: 20%;
-    height: 20%;
+    width: 400px;
+    height: 400px;
+}
+
+#lampada {
+    margin-right: 250px;
+}
+
+.container {
+    display: flex;
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
