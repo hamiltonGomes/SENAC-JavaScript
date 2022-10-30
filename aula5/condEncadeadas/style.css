@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 0;
 }
+
 div{
     gap: 10px;
     display: flex;
@@ -11,4 +12,3 @@ div{
     margin-top: 12%;
     background-color: pink;
 }
-
