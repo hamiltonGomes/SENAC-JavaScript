@@ -1,0 +1,63 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-size: 26px;
+    background-image: url(imagens/sachin-khadka-Tw4a-XxI0O0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 95vw;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+header {
+    text-shadow: 5px 5px 5px black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 36px;
+}
+
+input {
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+    width: 30%;
+    padding-left: 15%;
+    border-radius: 2.5em;
+    border: 0px solid;
+}
+
+div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    border-radius: 2.5em;
+    border: 1px solid;
+}
+
+#button:hover {
+    transform: scale(1.1);
+}
+
+#resultado {
+    text-align: center;
+    color: grey;
+}
