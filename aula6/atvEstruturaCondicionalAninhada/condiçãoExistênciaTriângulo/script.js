@@ -9,7 +9,6 @@ function discover() {
     //      | a - c | < b < a + c
     //      | a - b | < c < a + b
 
-
     let edge12 = edge1 - edge2
     if (edge12 < 0) {
         edge12 = edge12 * (-1)
@@ -30,27 +29,16 @@ function discover() {
         if ((edge1 + edge2 > edge3 && edge3 > edge12) && (edge2 + edge3 > edge1 && edge1 > edge23) && (edge3 + edge1 > edge2 && edge2 > edge31)) {
             if (edge1 == edge2 && edge1 == edge3) {
                 print.innerHTML = "Triângulo equilátero."
-                print.style.color = "blue"
             }
             else if (edge1 != edge2 && edge1 != edge3 && edge2 != edge3) {
                 print.innerHTML = "Triângulo escaleno."
-                print.style.color = "red"
             }
             else {
                 print.innerHTML = "Triângulo isóceles."
-                print.style.color = "green"
             }
         }
         else {
             print.innerHTML = "Os dados informados não formam um triângulo."
         }
     }
-}
-
-function button() {
-    let button1 = document.getElementsByTagName('input')[0]
-    let button2 = document.getElementsByTagName('input')[1]
-    let button3 = document.getElementsByTagName('input')[2]
-
-    button1.style.transform = ''
 }

@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
     margin: 0 auto;
@@ -7,57 +7,70 @@
 }
 
 body {
-    font-size: 26px;
     background-image: url(imagens/sachin-khadka-Tw4a-XxI0O0-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    width: 95vw;
-    margin: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
 }
 
 header {
-    text-shadow: 5px 5px 5px black;
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-size: 36px;
+    font-size: 32px;
 }
 
-input {
+.container {
     font-size: 26px;
-    color: black;
-    cursor: pointer;
-    width: 30%;
-    padding-left: 15%;
-    border-radius: 2.5em;
-    border: 0px solid;
+    width: 95vw;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    text-shadow: 5px 5px 5px black;
 }
 
-div{
+.calculo {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
+}
+
+#tri {
+    font-size: 22px;
+    color: black;
+    cursor: auto pointer;
+    width: 10%;
+    text-align: center;
+    border-radius: 2.5em;
+    border: 0px solid;
 }
 
 #button {
-    width: 100px;
-    height: 30px;
+    color: black;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 20px;
+    width: 15%;
+    height: 35px;
     border-radius: 2.5em;
-    border: 1px solid;
+    border: 1px solid whitesmoke;
 }
 
 #button:hover {
-    transform: scale(1.1);
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid black;
+    transition-delay: 100ms;
 }
 
 #resultado {
     text-align: center;
-    color: grey;
+    margin-top: 45px;
+    font-size: 32px;
+    color: black;
+    text-shadow: 1px 1px 1px white;
 }
