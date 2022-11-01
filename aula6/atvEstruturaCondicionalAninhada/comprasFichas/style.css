@@ -4,9 +4,33 @@
 }
 
 body {
+    top: 20px;
     text-align: center;
-    margin: 20px;
-    padding: 10px;
+}
+
+img {
+    position:fixed;
+    top: -60%;
+    right: -15%;
+    width: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+#saldo {
+    margin-top: 5%;
+    width: 10%;
+    text-align: center;
+}
+
+.tittle {
+    margin-top: 0%;
+}
+
+.description {
+    margin-top: 5%;
 }
 
 .container {
@@ -15,10 +39,11 @@ body {
     display: flex;
     justify-content: center;
     text-align: justify;
+    gap: 50%;
 }
 
-.itens,
-.itens2 {
+.left,
+.right {
     display: flex;
     flex-direction: column;
 }

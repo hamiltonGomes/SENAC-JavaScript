@@ -6,64 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="script.js" id="itens" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Exemplo 2</title>
 </head>
 
 <body>
-    <h2>Digite o número de fichas que você possui.</h2>
-    <p>Cada item custa 1 ficha.</p>
-
-    <input id="saldo" type="number" placeholder="Seu saldo">
-    <input type="button" onclick="compras()" value="Submeter saldo.">
-
     <div>
+        <img src="arcade.svg">
+        <h2 class="tittle">Fliperama</h2>
+        <p class="description">Cada jogo custa 1 ficha.</p>
+
+        <input id="saldo" type="number" placeholder="Suas fichas" id="itens" oninput="compras()">
         <h3 id="saldo1"></h3>
         <p id="descricao"></p>
     </div>
 
 
     <div class="container">
-        <div class="itens">
+        <div class="left">
 
-            <label for="galinha"><input name="itens" id="galinha" type="checkbox" onclick="compras()">
-                Galinha</label>
+            <label for="metal"><input name="itens" id="metal" type="checkbox" onclick="compras()">
+                Metal Slug X</label>
 
-            <label for="arroz"><input name="itens" id="arroz" type="checkbox" onclick="compras()">
-                Arroz</label>
+            <label for="golden"><input name="itens" id="golden" type="checkbox" onclick="compras()">
+                Golden Fire II</label>
 
-            <label for="feijao"><input name="itens" id="feijao" type="checkbox" onclick="compras()">
-                Feijão</label>
+            <label for="antart"><input name="itens" id="antart" type="checkbox" onclick="compras()">
+                Antarctic Adventure</label>
 
-            <label for="macarrao"><input name="itens" id="macarrao" type="checkbox" onclick="compras()">
-                Macarrão</label>
+            <label for="aero"><input name="itens" id="aero" type="checkbox" onclick="compras()">
+                Aero Fighters</label>
 
-            <label for="batata"><input name="itens" id="batata" type="checkbox" onclick="compras()">
-                Batata</label>
+            <label for="crash"><input name="itens" id="crash" type="checkbox" onclick="compras()">
+                Crash</label>
 
         </div>
-        <div class="itens2">
+        <div class="right">
 
-            <label for="cuscuz"><input name="itens" id="cuscuz" type="checkbox" onclick="compras()">
-                Cuscuz</label>
+            <label for="resident"><input name="itens" id="resident" type="checkbox" onclick="compras()">
+                Residente Evil II</label>
 
-            <label for="laranja"><input name="itens" id="laranja" type="checkbox" onclick="compras()">
-                Laranja</label>
+            <label for="silent"><input name="itens" id="silent" type="checkbox" onclick="compras()">
+                Silent Hill</label>
 
-            <label for="azeite"><input name="itens" id="azeite" type="checkbox" onclick="compras()">
-                Azeite</label>
+            <label for="mortal"><input name="itens" id="mortal" type="checkbox" onclick="compras()">
+                Mortal Combat</label>
 
-            <label for="abacate"><input name="itens" id="abacate" type="checkbox" onclick="compras()">
-                Abacate</label>
+            <label for="king"><input name="itens" id="king" type="checkbox" onclick="compras()">
+                The King of Fighters</label>
 
-            <label for="alface"><input name="itens" id="alface" type="checkbox" onclick="compras()">
-                Alface</label>
+            <label for="street"><input name="itens" id="street" type="checkbox" onclick="compras()">
+                Street Fighter</label>
 
+                <h3 id="saldo1"></h3>
+                <p id="descricao"></p>
         </div>
     </div>
-
-
 
 </body>
 

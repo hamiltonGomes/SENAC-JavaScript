@@ -5,7 +5,7 @@ function compras() {
 
     let printDescription = document.getElementById('descricao')
 
-    var numberOfChecked = $('input:checkbox:checked').length
+    let numberOfChecked = $('input:checkbox:checked').length
     saldo = saldo - numberOfChecked
 
     if (saldo < 0) {
@@ -13,20 +13,20 @@ function compras() {
     }
     else if (saldo > 0) {
         if (saldo >= 10) {
-            printSaldo1.innerHTML = `Seu saldo de fichas é de ${saldo}`
-            printDescription.innerHTML = 'Você tem muitassss fichas! Boas compras!'
+            printSaldo1.innerHTML = `Você possui ${saldo} fichas.`
+            printDescription.innerHTML = 'Você tem muitas fichas!<br> Divirta-se!'
         }
         else if (saldo > 5 && saldo < 10) {
-            printSaldo1.innerHTML = `Seu saldo de fichas é de ${saldo}`
-            printDescription.innerHTML = 'Boas compras!'
+            printSaldo1.innerHTML = `Você possui ${saldo} fichas.`
+            printDescription.innerHTML = 'Suas fichas estão acabando!<br> Escolha com sabedoria.'
         }
         else {
-            printSaldo1.innerHTML = `Seu saldo de fichas é de ${saldo}`
-            printDescription.innerHTML = 'Escolha o necessário.'
+            printSaldo1.innerHTML = `Você possui ${saldo} fichas.`
+            printDescription.innerHTML = 'Você tem poucas fichas. <br> Recarregue agora!'
         }
     }
     else {
         printSaldo1.innerHTML = `Você tem ${saldo} fichas.`
-        printDescription.innerHTML = 'Recarregue no estabelecimento mais próximo.'
+        printDescription.innerHTML = 'Recarregue no estabelecimento<br>mais próximo.'
     }
 }
