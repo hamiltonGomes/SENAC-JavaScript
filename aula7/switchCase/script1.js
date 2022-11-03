@@ -1,6 +1,5 @@
 var print = document.getElementsByTagName('h2')[0]
 
-
 function signo() {
     let date = document.getElementsByTagName('input')[0].valueAsDate
     let day = date.getUTCDate()
@@ -91,6 +90,3 @@ function signo() {
             }
     }
 }
-
-
-// Enxergo no programa ONE uma grande oportunidade de aperfeiçoamento e crescimento, uma vez que o projeto tem como propósito capacitar estudantes a partir de tecnologias muito utilizadas no mercado de trabalho mundial e isso é muito instigante. A possibilidade de realizar um curso gratuito tão completo como esse me deixa muito feliz, pois alinha a vontade de aprender com a oportunidade. Portanto, quero muito conseguir participar do programa ONE que já me brilha os olhos desde a pré-inscrição em agosto. Desde já, obrigado pela atenção e pela oportunidade.
