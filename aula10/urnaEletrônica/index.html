@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Presidente da República</title>
+</head>
+
+<body>
+    <h1>Presidente da República</h1>
+    <input type="text" name="numero1" maxlength="1" value="">
+    <input type="text" name="numero2" maxlength="1" value="">
+
+    <input type="button" onclick="numeroDigitado(1)" 
+    name=" button1" value="1"></input>
+    <input type="button" onclick="numeroDigitado(2)" name="button2" value="2"></input>
+    <input type="button" onclick="numeroDigitado(3)" name="button3" value="3"></input>
+    <input type="button" onclick="numeroDigitado(4)" name="button4" value="4"></input>
+    <input type="button" onclick="numeroDigitado(5)" name="button5" value="5"></input>
+    <input type="button" onclick="numeroDigitado(6)" name="button6" value="6"></input>
+    <input type="button" onclick="numeroDigitado(7)" name="button7" value="7"></input>
+    <input type="button" onclick="numeroDigitado(8)" name="button8" value="8"></input>
+    <input type="button" onclick="numeroDigitado(9)" name="button9" value="9"></input>
+    <input type="button" onclick="numeroDigitado(0)" name="button0" value="0"></input>
+
+    <input type="button" onclick="branco()" value="Branco"></input>
+    <input type="button" onclick="corrigir()" value="Corrige"></input>
+    <input type="button" onclick="votar()" value="Confirma"></input>
+
+    <h2>Resultado</h2>
+    <input type="button" value="Visualizar resultados." onclick="resultado()">
+    <p id="resultado"></p>
+</body>
+
+</html>
