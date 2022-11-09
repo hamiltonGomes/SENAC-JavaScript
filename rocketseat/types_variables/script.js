@@ -1,4 +1,4 @@
-
+/* 
 //object
 
 console.log({
@@ -122,3 +122,53 @@ let candidatos = [13, 22, 12, 45, 77]
 console.log(candidatos[0])
 
 //------------------------------------------------------------------------------------------
+ */
+
+// nesse caso o valor de nenhum dos subject se sobrepõe, pois estão definidos e o parâmetro da função está informado.
+
+let subject = 'create video'
+
+function createThink(subject) {
+    subject = 'study'
+    return subject
+}
+
+console.log(subject)
+console.log(createThink(subject))
+
+// mas caso seja retirado o parâmetro da função, o valor da variável na função se sobrepõe ao valor antigo da variável
+
+let subject = 'create video'
+
+function createThink() {
+    subject = 'study'
+    return subject
+}
+
+console.log(createThink(subject))
+console.log(subject)
+
+//////////////////////////////////
+
+let subject
+
+function createThink() {
+    subject = 'study'
+    return subject // caso a função não tenha retorno, ela imprime: UNDEFINED, mas os volores de variáveis atualizados dentro dela são mantidos
+}
+
+console.log(subject) // undefined
+console.log(createThink()) // study, ta retornando oq foi definido na função
+console.log(subject) // study
+
+///////////////////////
+
+let subject
+
+function createThink() {
+    subject = 'study'
+}
+
+console.log(subject) // undefined
+console.log(createThink() // undefined
+console.log(subject) // study - mesmo a função não retornando, ela altera o valor dessa variável
