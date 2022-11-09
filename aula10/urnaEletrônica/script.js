@@ -21,19 +21,21 @@ function votar() {
     var candidato = (valor1 * 10) + valor2
     if (sessionStorage.getItem(candidato) !== null) {
         votos = parseInt(sessionStorage.getItem(candidato)) + 1
-        sessionStorage.setItem(candidato, 1)
+        sessionStorage.setItem(candidato, votos)
     }
     else {
         sessionStorage.setItem(candidato, 1)
     }
-    alert("TRILILILIMMM!")
+    alert("TRILILILIMMM! Voto confirmado no candidato " + candidato)
+    document.getElementsByTagName('input')[0].value = ""
+    document.getElementsByTagName('input')[1].value = ""
 }
 
 function resultado() {
-    document.getElementById('resultado').innerHTML = ""
-    for (i = 0; 1 < 100; i++) {
+    document.getElementById("resultado").innerHTML=""
+    for(i=0; i<100; i++) {
         if (sessionStorage.getItem(i) !== null) {
-            document.getElementById('resultado').innerHTML += "Candidato " + i + " tem " + sessionStorage.getItem(i) + " votos. <br>"
+            document.getElementById("resultado").innerHTML += "Candidato " + i + " tem " + sessionStorage.getItem(i) + " votos. <br/>"
         }
     }
 }
