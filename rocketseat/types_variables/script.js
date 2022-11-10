@@ -121,9 +121,9 @@ let candidatos = [13, 22, 12, 45, 77]
 
 console.log(candidatos[0])
 
-//------------------------------------------------------------------------------------------
+//--------------------------------FUNCTIONS----------------------------------------------------------
  */
-
+/* 
 // nesse caso o valor de nenhum dos subject se sobrepõe, pois estão definidos e o parâmetro da função está informado.
 
 let subject = 'create video'
@@ -171,4 +171,35 @@ function createThink() {
 
 console.log(subject) // undefined
 console.log(createThink() // undefined
-console.log(subject) // study - mesmo a função não retornando, ela altera o valor dessa variável
+console.log(subject) // study - mesmo a função não retornando, ela altera o valor dessa variável */
+
+//----------------------------------MANIPULANDO ARRAYS-------------------------------------------------
+/* 
+let tech = ["html", "css", "js"]
+
+tech.length
+tech.push("react")
+console.log(tech) // adiciona item no final do Array
+tech.unshift("sql")
+console.log(tech) // adiciona item no início do Array
+tech.pop()
+console.log(tech) // remove item no final do Array
+tech.shift()
+console.log(tech) // remove item no início do Array
+
+let index = tech.indexOf("js")
+console.log(index) // retorna a posição do elemento no Array, se o elemento não existir ele retorna -1
+tech.splice(index, 1) // desse modo é possível localizar um termo no array e retirá-lo. o número um é pra especificar a quantidade que deseja retirar do termo.
+console.log(tech)
+
+console.log(tech.slice(0, 3)) // html, css e js
+console.log(tech.slice(1, 3)) // css e js
+console.log(tech.splice(0, 2)) // html e css
+console.log(tech.splice(0, 2)) // js
+ */
+//-----------------------------------------------------------------------------------
+
+let teste = []
+teste.push(1)
+teste.push(2)
+console.log(teste)
