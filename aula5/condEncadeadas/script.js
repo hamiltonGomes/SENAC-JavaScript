@@ -20,7 +20,7 @@ function faltas() {
             resultado.innerHTML = `O número de faltas do segundo semestre (${valorInput2}) é superior ao número de faltas do primeiro semestre (${valorInput1}) e maior que o número de faltas permitidas, portanto, o aluno está reprovado.`
         }
         else {
-            resultado.innerHTML = `O número de faltas do segundo semestre (${valorInput1}) é superior ao número de faltas do primeiro semestre (${valorInput2})`
+            resultado.innerHTML = `O número de faltas do segundo semestre (${valorInput2}) é superior ao número de faltas do primeiro semestre (${valorInput1})`
         }
     }
 }
