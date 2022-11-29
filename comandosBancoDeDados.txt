@@ -1,0 +1,36 @@
+Instalar o Node.Js
+
+
+Express JS:
+npm install express --save
+
+Nodemon:
+npm install --g nodemon
+
+Sequelize:
+npm install sequelize mysql2
+
+
+CREATE database exemplo;
+
+USE exemplo;
+
+CREATE TABLE exemplo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
