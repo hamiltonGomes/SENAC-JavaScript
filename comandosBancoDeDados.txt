@@ -1,6 +1,5 @@
 Instalar o Node.Js
 
-
 Express JS:
 npm install express --save
 
@@ -10,6 +9,15 @@ npm install --g nodemon
 Sequelize:
 npm install sequelize mysql2
 
+Handlebars:
+npm install handlebars
+npm install express-handlebars
+
+Body parser:
+npm install body-parser
+
+
+COMANDOS:
 
 CREATE database exemplo;
 
