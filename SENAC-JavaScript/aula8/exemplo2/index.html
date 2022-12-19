@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Exemplo 2</title>
+</head>
+
+<body>
+
+    <h1>Peças inverno - 25% mais caras</h1>
+
+    <p>Escolha as peças que deseja comprar.</p>
+    <ol>
+        <li>Camisa manga longa - R$ 60,00</li>
+        <li>Sapato - R$ 80,00</li>
+        <li>Casaco - R$ 50,00</li>
+        <li>Moletom - R$ 70,00</li>
+        <li>Luvas - R$ 80,00</li>
+    </ol>
+
+    <input id="totalInverno" type="number" onfocus="this.value=''">
+    <input type="button" value="Adicionar ao carrinho" onclick="inverno()">
+
+    <h1>Promoção verão - 20% desconto</h1>
+    <ol>
+        <li>Roupa de banho - R$ 60,00</li>
+        <li>Camisa - R$ 100,00</li>
+        <li>T-shirt - R$ 150,00</li>
+        <li>Bermuda - R$ 170,00</li>
+        <li>Sandália - R$ 80,00</li>
+    </ol>
+
+    <input id="totalVerao" type="number" onfocus="this.value=''">
+    <input type="button" value="Adicionar ao carrinho" onclick="verao()">
+
+        <p id="carrinho"></p>
+
+</body>
+
+</html>

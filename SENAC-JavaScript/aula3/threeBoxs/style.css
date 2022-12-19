@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+:root {
+    --button1: pink;
+    --button2: yellow;
+    --button3: purple;
+}
+
+.box1,
+.box2,
+.box3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-top: 15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box1 {
+    background-color: var(--button1);
+}
+
+.box2 {
+    background-color: var(--button2);
+}
+
+.box3 {
+    background-color: var(--button3);
+}
+
+.button1,
+.button2,
+.button3 {
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+    border: 0px solid;
+    border-radius: 100%;
+}
+
+.button1 {
+    background-color: var(--button1);
+}
+
+.button2 {
+    background-color: var(--button2);
+}
+
+.button3 {
+    background-color: var(--button3);
+}
+
+.button1:hover {
+    background-color: var(--button1);
+    border-color: var(--button1);
+    font-weight: 900;
+}
+
+.button2:hover {
+    background-color: var(--button2);
+    border-color: var(--button2);
+    font-weight: 900;
+}
+
+.button3:hover {
+    background-color: var(--button3);
+    border-color: var(--button3);
+    font-weight: 900;
+    color: white;
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        background-color: white;
+    }
+
+    :root {
+        --button1: red;
+        --button2: yellowgreen;
+        --button3: orange;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+}
