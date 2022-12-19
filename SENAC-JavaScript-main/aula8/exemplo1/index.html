@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mercado</h1>
+    <p>Informe seu saldo:</p>
+
+    <input id="valorSaldoInicial" type="number" oninput="saldo()">
+
+    <p id="saldoAtual"></p>
+
+    <ol>
+        <li>Feijão - <b>R$ 9,00</b></li>
+        <li>Arroz - <b>R$ 7,00</b></li>
+        <li>Macarrão - <b>R$ 6,00</b></li>
+        <li>Galinha - <b>R$ 20,00</b></li>
+        <li>Carne de sol - <b>R$ 25,00</b></li>
+        <li>Batata - <b>R$ 5,00</b></li>
+        <li>Cenoura - <b>R$ 4,00</b></li>
+        <li>Tomate - <b>R$ 4,50</b></li>
+    </ol>
+
+    <p>Quais itens você gostaria de comprar?</p>
+    <input id="compras" type="number" min="1" max="8" onfocus="this.value=''">
+
+    <input id="add" type="button" value="Adicionar ao carrinho" onclick="comprar()">
+
+    <p id="total"></p>
+
+    <input id="finalizar" type="button" value="Finalizar compra" onclick="finalizar()">
+
+    <p id="saldoFinal"></p>
+
+</body>
+
+</html>
